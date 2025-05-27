@@ -32,6 +32,14 @@ Pour finir, on utiliser https://www.tints.dev pour générer une palette de chaq
 
 Pour plus d'informations, consulter cet excellent tuto : https://tomsouthall.com/blog/tailwind-custom-colours
 
+### Dépendance Material UI
+Il faut installer les packages de base MUI
+```bash
+// with npm
+npm install @mui/material @emotion/react @emotion/styled
+```
+Dans le répertoire src, créer un fichier ```theme.js```, qui va contenir les constantes de couleurs et de typo pour Material.
+ 
 ## index.js
 Il faut d'abord fixer la dépendance de  cette ligne : 
 ```javascript
@@ -41,13 +49,34 @@ Il suffit d'installer le package :
 ```bash
 npm install react-router-dom --save
 ```
-### Dépendance Material UI
-Il faut installer les packages de base MUI
-```bash
-// with npm
-npm install @mui/material @emotion/react @emotion/styled
+Ensuite, créer une route (/) pointant vers une page ```HomePage.jsx``` précédemment créée.
+
+```javascript
+import theme from './theme';
+import HomePage from './pages/HomePage';
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <StyledEngineProvider injectFirst>
+    <ThemeProvider theme={theme} defaultMode="dark">
+      <BrowserRouter>
+        <CssBaseline />
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route component={HomePage} />
+          <Route path="*" element={
+            <main style={{ padding: "1rem" }}>
+              <p>There's nothing here!</p>
+              <App />
+            </main>
+          } />
+        </Routes>
+      </BrowserRouter>
+    </ThemeProvider>
+  </StyledEngineProvider>
+);
 ```
-Dans le répertoire src, créer un fichier ```theme.js```, qui va contenir les constantes de couleurs et de typo pour Material.
+
+
 
 
 
