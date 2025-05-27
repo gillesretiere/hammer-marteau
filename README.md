@@ -1,3 +1,28 @@
+# Initialisation
+## clonage de git, ajout d'une nouvelle branche et création d'un projet react
+```bash
+git clone https://github.com/gillesretiere/hammer-marteau.git
+cd hammer-marteau
+git checkout -b "new-version"
+git pull origin main
+npx create-react-app .
+git add .
+npm install -D tailwindcss@3 postcss autoprefixer
+npx tailwindcss init -p
+npm install postcss@latest
+npm install ajv@latest ajv-keywords@latest
+```
+
+## Création du projet dans VSCode
+Après avoir sélectionner le répertoire où se trouve le projet, faire un commit sur la branche "new-version"
+
+## Lancement du projet
+```bash
+cd src
+npm start
+```
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
