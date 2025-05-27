@@ -25,15 +25,12 @@ npm start
 ## Palette & Typographie
 ### Palette
 On peut utiliser l'outil ColorName ou bien un autre pour trouver les codes couleur et les nuances à partir d'une couleur.
-https://www.color-name.com/extreme-red.color#google_vignette
-https://chir.ag/projects/name-that-color/#6195ED
+ColorName : https://www.color-name.com/extreme-red.color#google_vignette
+Chir.ag : https://chir.ag/projects/name-that-color/#6195ED
 
 Pour finir, on utiliser https://www.tints.dev pour générer une palette de chaque couleur
 
-
-
-
-
+Pour plus d'informations, consulter cet excellent tuto : https://tomsouthall.com/blog/tailwind-custom-colours
 
 # Getting Started with Create React App
 
