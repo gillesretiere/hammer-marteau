@@ -21,6 +21,18 @@ Après avoir sélectionner le répertoire où se trouve le projet, faire un comm
 cd src
 npm start
 ```
+# Personnalisation
+## Palette & Typographie
+### Palette
+On peut utiliser l'outil ColorName ou bien un autre pour trouver les codes couleur et les nuances à partir d'une couleur.
+https://www.color-name.com/extreme-red.color#google_vignette
+https://chir.ag/projects/name-that-color/#6195ED
+
+Pour finir, on utiliser https://www.tints.dev pour générer une palette de chaque couleur
+
+
+
+
 
 
 # Getting Started with Create React App
