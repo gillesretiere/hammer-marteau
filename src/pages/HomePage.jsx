@@ -1,8 +1,18 @@
-import React from 'react'
+import React from 'react';
+import Layout from '../components/Layout';
+import {
+  HeroSection,
+  SolutionsSection,
+} from './sections/index.js';
 
 const HomePage = () => {
   return (
-    <div>HomePage</div>
+    <>
+    <Layout>
+      <HeroSection />
+      <SolutionsSection />
+    </Layout>
+    </>
   )
 }
 
