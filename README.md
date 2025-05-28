@@ -85,6 +85,51 @@ root.render(
 - Layout 
 - Footer
 
+#### Gestion du mode Light/dark
+- Nous utiliserons tailwind et useState pour gérer ce mode.
+- Pour les icônes, nous utiliserons le package ```react-icons```, et dans celui-ci les icônes LuSun et LuMoon.
+
+```bash
+npm install react-icons --save
+```
+- Il faut bien préciser à tailwind que nous utiliserons le mode comme une classe :
+```javascript
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  darkMode: 'class',
+  content: [
+    "./src/**/*.{js,jsx,ts,tsx}",
+  ],
+...
+```
+
+- Maintenant, nous pouvons définir une classe ```dark``` au plus haut niveau de la hiérarchie HTML.
+- Cependant, nous pouvons surclasser ce mode à un niveau inférieur en modifiant une couleur par exemple ici dans le composant ```<Layout>```
+
+```javascript
+import React from 'react';
+import Header from './Header';
+import Footer from './Footer';
+import classes from "./Layout.module.css";
+
+const Layout = ({ children }) => {
+    return (
+        <>
+            <div id="layout" className={`${classes.container}`}>
+                <div className='bg-white border-gray-200 dark:bg-zinc-900 '>
+                    <Header />
+                    <div className={`${classes.layout} dark:bg-zinc-800`}>{children}</div>
+                    <Footer />
+                </div>
+            </div>
+        </>
+    )
+}
+
+export default Layout
+```
+
+
 
 
 
