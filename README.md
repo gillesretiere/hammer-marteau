@@ -32,13 +32,17 @@ Pour finir, on utiliser https://www.tints.dev pour générer une palette de chaq
 
 Pour plus d'informations, consulter cet excellent tuto : https://tomsouthall.com/blog/tailwind-custom-colours
 
+### Tailwind css
+- Compléter le fichier ```tailwind.config.js ```en précisant les palettes et la typo
+- Ne pas oublier d'ajouter l'entête tailwind dans ```index.css``` !
+
 ### Dépendance Material UI
 Il faut installer les packages de base MUI
 ```bash
 // with npm
 npm install @mui/material @emotion/react @emotion/styled
 ```
-Dans le répertoire src, créer un fichier ```theme.js```, qui va contenir les constantes de couleurs et de typo pour Material.
+- Dans le répertoire src, créer un fichier ```theme.js```, qui va contenir les constantes de couleurs et de typo pour Material.
  
 ## index.js
 Il faut d'abord fixer la dépendance de  cette ligne : 
@@ -75,6 +79,11 @@ root.render(
   </StyledEngineProvider>
 );
 ```
+### Layout
+- Layout.module.css
+- Header (contient la barre de navigation)
+- Layout 
+- Footer
 
 
 
