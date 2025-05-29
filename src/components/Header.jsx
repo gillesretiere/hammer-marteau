@@ -1,11 +1,10 @@
 import React from 'react';
-import Navbar from './Navbar';
-import AppNavBar from './AppNavBar';
+import Appbar from './Appbar';
 
 const Header = ({toggleLightDarkMode}) => {
     return (
         <>
-            <AppNavBar toggleLightDarkMode = {toggleLightDarkMode} />
+            <Appbar toggleLightDarkMode = {toggleLightDarkMode} />
         </>
     )
 }
