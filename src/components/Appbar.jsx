@@ -42,7 +42,7 @@ const Appbar = ({ toggleLightDarkMode }) => {
                         <div className='mr-5'>
                             <a href="#" className="flex items-center space-x-3 rtl:space-x-reverse">
                                 <img src="https://hammer-marteau.com/assets/hmrt_logo_red.png" className="h-8" alt="Hammer & Marteau Logo" />
-                                <span className="self-center text-xl font-normal whitespace-nowrap text-black dark:text-white">Hammer &amp; Marteau</span>
+                                <span className="hidden sm:block self-center text-xl font-normal whitespace-nowrap text-black dark:text-white">Hammer &amp; Marteau</span>
                             </a>
                         </div>
                         <div>
@@ -58,7 +58,7 @@ const Appbar = ({ toggleLightDarkMode }) => {
                                         /* md: "none", hidden if device >= md */
                                     }
                                 }}
-                                className='sm:hidden'
+                                className='sm:hidden text-black dark:text-white hover:text-milano-500 dark:hover:text-milano-200'
                             >
                                 <MenuIcon />
                             </IconButton>
@@ -85,9 +85,9 @@ const Appbar = ({ toggleLightDarkMode }) => {
                                                 <>
                                                     {/* on teste si href interne (#) : composant "a" sinon "Link" */}
                                                     <ListItemButton key={index} component={item.href.startsWith('#') ? "a" : Link} href={`${item.href}`} to={`${item.href}`}
-                                                        className='dark:text-white dark:hover:bg-zinc-700' >
+                                                        className='text-black hover:text-milano-500 dark:text-white dark:hover:bg-zinc-700 dark:hover:text-milano-200' >
                                                         <ListItemIcon>
-                                                            <DescriptionIcon sx={{ color: "primary.contrastText" }} />
+                                                            <DescriptionIcon className='text-black dark:text-white' />
                                                         </ListItemIcon>
                                                         <ListItemText primary={`${item.title}`} />
                                                         {/* <Chip label={item.enabled ? "disponible" :"prochainement"} size="small"></Chip> */}
@@ -101,13 +101,13 @@ const Appbar = ({ toggleLightDarkMode }) => {
                         </div>
 
                         {/* Menu Options */}
-                        <div class="hidden w-full md:block md:w-auto mr-5" id="navbar-default">
+                        <div class="hidden w-full md:block md:w-auto mx-9" id="navbar-default">
                             <ul class="font-articulat_cf font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
                                 {NavbarData.map((link, index) => {
                                     return (
                                         <li key={index} className={link.cname}>
                                             <Link
-                                                className="hover:text-sky-500"
+                                                className="text-black hover:text-milano-500 dark:text-white dark:hover:text-milano-200 text-sm"
                                                 to={link.href}
                                                 target="_blank"
                                             >
@@ -118,7 +118,6 @@ const Appbar = ({ toggleLightDarkMode }) => {
                                 })}
                             </ul>
                         </div>
-
 
                         <LightDarkToggle toggleLightDarkMode={toggleLightDarkMode} />
 
