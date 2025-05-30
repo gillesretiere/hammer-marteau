@@ -128,6 +128,11 @@ const Layout = ({ children }) => {
 
 export default Layout
 ```
+#### Appbar (avancé)
+- Choix d'une solution hybride (tailwind + Material UI)
+- Toute la barre de navigation est faite avec MUI sauf le Drawer (Hamburger dévoilé) qui est fait en pur React/JS
+-- la gestion du Dark Mode par Tailwind ne fonctionne pas avec MUI.Drawer
+
 
 
 
