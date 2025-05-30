@@ -1,6 +1,8 @@
 import React from 'react';
 import {
     allophoneInRed,
+    allophoneInRedTablet,
+    allophoneInRedMobile,
 } from '../../assets/index.js';
 import Typography from '@mui/material/Typography';
 
@@ -10,12 +12,18 @@ const HeroSection = () => {
         <>
             <section id="hero" className='min-h-screen max-container'>
                 <div className='relative text-center text-[white]'>
-                    <img src={allophoneInRed} width="100%" className='h-full object-cover' />
+                    <picture>
+                        {/* image pour plus large que mobile */}
+                        <source media="(min-width:1024px)" srcset={allophoneInRed} />
+                        <source media="(min-width:768px)" srcset={allophoneInRedTablet} />
+                        {/* par defaut image pour mobile */}
+                        <img src={allophoneInRedMobile} width="100%" className='h-full object-cover' />
+                    </picture>
                     <div className='absolute -translate-x-2/4 -translate-y-2/4 left-2/4 top-2/4'>
-                        <Typography className={`font-articulat_cf font-bold text-sm lg:text-5xl leading-none tracking-tight break-keep mb-3`}>
+                        <Typography className={`font-articulat_cf font-bold text-sm sm:text-3xl lg:text-5xl leading-none tracking-tight break-keep mb-3`}>
                             Fabrique d&apos;outils numériques pour favoriser la compréhension linguistique.
                         </Typography>
-                        <Typography className={`font-articulat_cf font-normal text-xs lg:text-3xl leading-none tracking-tight break-keep`}>
+                        <Typography className={`font-articulat_cf font-normal text-xs sm:text-xl lg:text-3xl leading-none tracking-tight break-keep`}>
                             Pour contribuer à lever les barrières de la langue et les incompréhen-sions culturelles par la réalisation d&apos;outils numériques qui aident à la communication entre professionnels et non francophones.
                         </Typography>
                         <div>

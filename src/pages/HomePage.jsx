@@ -2,6 +2,7 @@ import React from 'react';
 import Layout from '../components/Layout';
 import {
   HeroSection,
+  ConstatSection,
   SolutionsSection,
 } from './sections/index.js';
 
@@ -10,6 +11,7 @@ const HomePage = () => {
     <>
     <Layout>
       <HeroSection />
+      <ConstatSection />
       <SolutionsSection />
     </Layout>
     </>
