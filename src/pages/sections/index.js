@@ -1,6 +1,7 @@
 import HeroSection from "./HeroSection";
 import SolutionsSection from "./SolutionsSection";
 import ConstatSection from "./ConstatSection";
+import MedicalSection from "./MedicalSection";
 import PricingSection from "./PricingSection";
 import PromesseSection from "./PromesseSection";
 import ContactSection from "./ContactSection";
@@ -10,6 +11,7 @@ export {
     HeroSection,
     SolutionsSection,
     ConstatSection,
+    MedicalSection,
     PricingSection,
     PromesseSection,
     ContactSection,
