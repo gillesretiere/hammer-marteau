@@ -13,11 +13,11 @@ const HomePage = () => {
     <>
     <Layout>
       <HeroSection />
+      <SolutionsSection />
       {/* 
       <ConstatSection />
       <MedicalSection />
       <PromesseSection />
-      <SolutionsSection />
       */}
     </Layout>
     </>

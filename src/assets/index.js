@@ -9,6 +9,7 @@ import section_1 from "./section-apropos-mobileinhand-1280x731.png";
 import section_1_Tablet_Portrait from "./section-apropos-mobileinhand-768x1024.png";
 import section_1_Mobile_Portrait from "./section-apropos-mobileinhand-1080x2340.png";
 import logo_square_red from "./logo-600x600_RED_WHITE.png";
+import macbook_mockup_saynetes from './macbook-mockup-saynetes.png';
 
 export {
     allophoneInRed,
@@ -22,4 +23,5 @@ export {
     section_1_Mobile_Portrait,
     section_1_Tablet_Portrait,
     logo_square_red,
+    macbook_mockup_saynetes,
 };

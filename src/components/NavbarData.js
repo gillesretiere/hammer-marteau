@@ -7,7 +7,8 @@ export const NavbarData = [
   },
   {
     title: "Saynètes",
-    href: "https://hammer-marteau-pricing-page.vercel.app/fr",
+    /* href: "https://hammer-marteau-pricing-page.vercel.app/fr", */
+    href: "#solutions",
     cname:
       "border-t font-medium w-full flex justify-center p-2.5 md:border-none md:p-0 md:w-auto dark:text-white"
   },

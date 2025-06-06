@@ -40,42 +40,46 @@ const HeroSection = () => {
             {/* second section only for mobile */}
             <section id="apropos" className='min-h-screen max-container lg:max-w-[50%]'>
                 <div className='grid grid-cols-5 gap-4 text-black dark:bg-zinc-800 dark:text-white'>
-                    <div className='col-span-1 sm:col-span-2 m-8'>
+                    <div className='col-span-1 sm:col-span-2 m-8 mt-8'>
                         <Typography className={`font-articulat_cf font-bold text-sm sm:text-3xl lg:text-5xl leading-none tracking-tight break-keep mb-3 `}>
-                            A propos
+                            &Agrave; propos
                         </Typography>
                     </div>
-                    <div className='col-span-4 sm:col-span-3 m-8'>
+                    <div className='col-span-4 sm:col-span-3 mx-8 mt-8'>
                         <Typography className={`font-articulat_cf font-bold text-2xl leading-none tracking-normal break-keep`}>
                             Hammer &amp; Marteau développe des outils numériques pour faciliter la compréhension linguistique.
                         </Typography>
                     </div>
                     <div className='col-span-1 sm:col-span-2'>
                     </div>
-                    <div className='col-span-4 sm:col-span-3 m-8'>
+                    <div className='col-span-4 sm:col-span-3 mx-8 mt-2'>
+                        <Typography className={`font-articulat_cf font-normal text-xl leading-none tracking-normal break-keep`}>
+                            En tant que professionnel de santé, il vous arrive de rencontrer des problèmes de communication liés à la barrière de la langue ?
+                        </Typography>
+                    </div>
+                    <div className='col-span-1 sm:col-span-2'>
+                    </div>
+                    <div className='col-span-4 sm:col-span-3 mx-8 mt-2'>
                         <Typography className={`font-articulat_cf font-normal text-xl leading-none tracking-normal break-keep`}>
                             Notre objectif est de lutter contre les barrières de la langue et les incompréhensions culturelles, particulièrement dans le domaine médical et social.
                         </Typography>
                     </div>
                     <div className='col-span-1 sm:col-span-2'>
                     </div>
-                    <div className='col-span-4 sm:col-span-3 m-8'>
+                    <div className='col-span-4 sm:col-span-3 mx-8 mt-2'>
                         <Typography className={`font-articulat_cf font-normal text-xl leading-none tracking-normal break-keep`}>
                             Ces outils sont développés en collaboration avec des professionnels de santé et des interprètes expérimentés.
                         </Typography>
                     </div>
-                    <div className='col-span-1 sm:col-span-2 m-8'>
+                    <div className='col-span-1 sm:col-span-2 m-8 mt-8'>
                         <Typography className={`font-articulat_cf font-bold text-sm sm:text-3xl lg:text-5xl leading-none tracking-tight break-keep mb-3 `}>
                             Contact
                         </Typography>
                     </div>
-                    <div className='col-span-4 sm:col-span-3 m-8'>
-                        <div className='relative rounded-2xl bg-background-secondary shadow-lg text-left px-10 py-10'>
-                            <img src={logo_square_red} className='w-[20%] mb-7'/>
-
-                            <div className='flex items-center gap-2'><FiMail /><a className='text-sky-500 hover:text-sky-700 text-xs' href="mailto:contact@hammer-marteau.com">contact@hammer-marteau.com</a></div>
-                            <div className='flex items-center gap-2'><FiPhone /><span className='relative'>06 30 30 13 64</span></div>
-                        </div>
+                    <div className='col-span-4 sm:col-span-3 mx-8 my-8'>
+                        <img src={logo_square_red} className='w-[20%] mb-7' />
+                        <div className='flex items-center gap-2'><FiMail /><a className='text-sky-500 hover:text-sky-700 text-xs' href="mailto:contact@hammer-marteau.com">contact@hammer-marteau.com</a></div>
+                        <div className='flex items-center gap-2'><FiPhone /><span className='relative'>06 30 30 13 64</span></div>
                     </div>
                 </div>
             </section>
