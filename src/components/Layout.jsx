@@ -6,11 +6,18 @@ import classes from "./Layout.module.css";
 
 const Layout = ({ children }) => {
 
-    const [darkMode, setDarkMode] = useState(false);
+    const [darkMode, setDarkMode] = useState(() => {
+        const isDark = localStorage.getItem('darkMode');
+        return isDark==='true' ? true : false;});
 
     const toggleLightDarkMode = (mode) => {
         setDarkMode (mode);
     };
+
+    // Report darkMode to localStorage
+    useEffect(() => {
+        localStorage.setItem('darkMode', darkMode);
+    }, [darkMode]);
 
     return (
         <>

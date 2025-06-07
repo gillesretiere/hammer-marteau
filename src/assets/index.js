@@ -10,6 +10,11 @@ import section_1_Tablet_Portrait from "./section-apropos-mobileinhand-768x1024.p
 import section_1_Mobile_Portrait from "./section-apropos-mobileinhand-1080x2340.png";
 import logo_square_red from "./logo-600x600_RED_WHITE.png";
 import macbook_mockup_saynetes from './macbook-mockup-saynetes.png';
+import iphone_mockup_saynete_101 from './iphone_mockup_saynete1_1fr.png';
+import iphone_mockup_saynete_102 from './iphone_mockup_saynete1_1ru.png';
+import iphone_mockup_saynete_103 from './iphone_mockup_saynete1_1-ru-kw.png';
+import iphone_mockup_saynete_104 from './iphone_mockup_saynete1_1-fr-kw.png';
+
 
 export {
     allophoneInRed,
@@ -24,4 +29,8 @@ export {
     section_1_Tablet_Portrait,
     logo_square_red,
     macbook_mockup_saynetes,
+    iphone_mockup_saynete_101,
+    iphone_mockup_saynete_102,
+    iphone_mockup_saynete_103,
+    iphone_mockup_saynete_104,
 };
