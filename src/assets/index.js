@@ -14,6 +14,7 @@ import iphone_mockup_saynete_101 from './iphone_mockup_saynete1_1fr.png';
 import iphone_mockup_saynete_102 from './iphone_mockup_saynete1_1ru.png';
 import iphone_mockup_saynete_103 from './iphone_mockup_saynete1_1-ru-kw.png';
 import iphone_mockup_saynete_104 from './iphone_mockup_saynete1_1-fr-kw.png';
+import mockup_saynete_3devices from './saynetes_mockup_3.png';
 
 
 export {
@@ -33,4 +34,5 @@ export {
     iphone_mockup_saynete_102,
     iphone_mockup_saynete_103,
     iphone_mockup_saynete_104,
+    mockup_saynete_3devices,
 };

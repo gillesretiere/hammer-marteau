@@ -38,7 +38,7 @@ const HeroSection = () => {
                 </div>
             </section>
             {/* second section only for mobile */}
-            <section id="apropos" className='min-h-screen max-container lg:max-w-[50%]'>
+            <section id="apropos" className='min-h-screen max-container xl:max-w-[66%]'>
                 <div className='grid grid-cols-5 gap-4 text-black dark:bg-zinc-800 dark:text-white'>
                     <div className='col-span-1 sm:col-span-2 m-8 mt-8'>
                         <Typography className={`font-articulat_cf font-bold text-sm sm:text-3xl lg:text-5xl leading-none tracking-tight break-keep mb-3 `}>
