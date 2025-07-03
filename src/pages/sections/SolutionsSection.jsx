@@ -91,7 +91,7 @@ const SolutionsSection = () => {
                             <source media="(min-width:1024px)" srcset={iphone_mockup_saynete_101} />
                             <source media="(min-width:768px)" srcset={iphone_mockup_saynete_101} />
                             {/* par defaut image pour mobile */}
-                            <img src={iphone_mockup_saynete_101} width="100%" className='h-full object-cover' />
+                            <img src={iphone_mockup_saynete_101} width="75%" className='object-cover' />
                         </picture>
                     </div>
                     <div className='relative col-span-2 xl:col-span-1 text-center text-[white]'>
@@ -100,7 +100,7 @@ const SolutionsSection = () => {
                             <source media="(min-width:1024px)" srcset={iphone_mockup_saynete_104} />
                             <source media="(min-width:768px)" srcset={iphone_mockup_saynete_104} />
                             {/* par defaut image pour mobile */}
-                            <img src={iphone_mockup_saynete_104} width="100%" className='h-full object-cover' />
+                            <img src={iphone_mockup_saynete_104} width="75%" className='object-cover' />
                         </picture>
                     </div>
                     <div className='relative col-span-2 xl:col-span-1 text-center text-[white]'>
@@ -109,7 +109,7 @@ const SolutionsSection = () => {
                             <source media="(min-width:1024px)" srcset={iphone_mockup_saynete_102} />
                             <source media="(min-width:768px)" srcset={iphone_mockup_saynete_102} />
                             {/* par defaut image pour mobile */}
-                            <img src={iphone_mockup_saynete_102} width="100%" className='h-full object-cover' />
+                            <img src={iphone_mockup_saynete_102} width="75%" className='object-cover' />
                         </picture>
                     </div>
                     <div className='relative col-span-2 xl:col-span-1 text-center text-[white]'>
@@ -118,14 +118,14 @@ const SolutionsSection = () => {
                             <source media="(min-width:1024px)" srcset={iphone_mockup_saynete_103} />
                             <source media="(min-width:768px)" srcset={iphone_mockup_saynete_103} />
                             {/* par defaut image pour mobile */}
-                            <img src={iphone_mockup_saynete_103} width="100%" className='h-full object-cover' />
+                            <img src={iphone_mockup_saynete_103} width="75%" className='object-cover' />
                         </picture>
                     </div>
                 </div>
             </section>
             <section id="solutions_part3" className='min-h-screen max-container'>
                 <div className='grid grid-cols-5 gap-4 text-black dark:bg-zinc-800 dark:text-white'>
-                    <div className='col-span-5 md:col-span-1'>
+                    <div className='col-span-5 2xl:col-span-1'>
                         <Typography className='font-articulat_cf font-bold text-3xl mx-5 my-3'>
                             Disponibles sur PC, tablette et mobile, en plusieurs langues
                         </Typography>
@@ -202,13 +202,13 @@ const SolutionsSection = () => {
 
                         </Typography>
                     </div>
-                    <div className='col-span-5 md:col-span-4'>
+                    <div className='col-span-5 2xl:col-span-4'>
                         <picture>
                             {/* image pour plus large que mobile */}
                             <source media="(min-width:1024px)" srcset={mockup_saynete_3devices} />
                             <source media="(min-width:768px)" srcset={mockup_saynete_3devices} />
                             {/* par defaut image pour mobile */}
-                            <img src={mockup_saynete_3devices} width="100%" className='h-full object-cover' />
+                            <img src={mockup_saynete_3devices} width="100%" className='object-cover'/>
                         </picture>
                     </div>
                 </div>

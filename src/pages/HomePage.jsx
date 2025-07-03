@@ -6,6 +6,7 @@ import {
   MedicalSection,
   PromesseSection,
   SolutionsSection,
+  SolutionsCartolangSection,
 } from './sections/index.js';
 
 const HomePage = () => {
@@ -14,6 +15,7 @@ const HomePage = () => {
     <Layout>
       <HeroSection />
       <SolutionsSection />
+      <SolutionsCartolangSection />
       {/* 
       <ConstatSection />
       <MedicalSection />

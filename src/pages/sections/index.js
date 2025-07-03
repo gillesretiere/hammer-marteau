@@ -1,5 +1,6 @@
 import HeroSection from "./HeroSection";
 import SolutionsSection from "./SolutionsSection";
+import SolutionsCartolangSection from "./SolutionsCartolangSection";
 import ConstatSection from "./ConstatSection";
 import MedicalSection from "./MedicalSection";
 import PricingSection from "./PricingSection";
@@ -16,4 +17,5 @@ export {
     PromesseSection,
     ContactSection,
     AutresSolutionsSection,
+    SolutionsCartolangSection,
 };

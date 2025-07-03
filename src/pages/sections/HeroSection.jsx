@@ -26,11 +26,12 @@ const HeroSection = () => {
                         <img src={section_1_Mobile_Portrait} width="100%" className='h-full object-cover' />
                     </picture>
                     <div className='absolute -translate-x-2/4 -translate-y-2/4 left-2/4 top-[20%] lg:top-2/4'>
-                        <Typography className={`font-articulat_cf font-bold text-3xl sm:text-4xl lg:text-5xl leading-none tracking-tight mb-3 text-start lg:text-center`}>
-                            Outils numériques pour faciliter la compréhension linguistique.
+                        <Typography className={`font-articulat_cf font-bold text-6xl lg:text-8xl leading-none tracking-tighter mb-3 text-start lg:text-center text-white`}>
+                            Hammer &amp; Marteau
                         </Typography>
                         <Typography className={`hidden md:block font-articulat_cf font-normal text-xl sm:text-2xl lg:text-3xl leading-none tracking-tight break-keep text-start lg:text-center`}>
-                            Contre les barrières de la langue et les incompréhensions culturelles.
+                            Outils numériques pour faciliter la compréhension linguistique<br/>
+                            Lutter contre les barrières de la langue et les incompréhensions culturelles.
                         </Typography>
                         <div>
                         </div>

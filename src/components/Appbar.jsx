@@ -18,6 +18,7 @@ import CloseIcon from "@mui/icons-material/Close";
 import Divider from "@mui/material/Divider";
 import Drawer from './Drawer';
 import Card from './Card';
+import {logo, } from '../assets/index';
 
 const Appbar = ({ toggleLightDarkMode }) => {
     //react useState hook to save the current open/close state of the drawer, normally variables dissapear afte the function was executed
@@ -41,7 +42,7 @@ const Appbar = ({ toggleLightDarkMode }) => {
                         {/* LOGO */}
                         <div className='mr-5'>
                             <a href="#" className="flex items-center space-x-3 rtl:space-x-reverse">
-                                <img src="https://hammer-marteau.com/assets/hmrt_logo_red.png" className="h-8" alt="Hammer & Marteau Logo" />
+                                <img src={logo} className="h-8" alt="Hammer & Marteau Logo" />
                                 <span className="hidden sm:block self-center text-xl font-normal whitespace-nowrap text-black dark:text-white">Hammer &amp; Marteau</span>
                             </a>
                         </div>
